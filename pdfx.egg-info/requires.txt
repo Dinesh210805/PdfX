@@ -1,0 +1,11 @@
+fpdf
+Pillow
+python-docx
+reportlab
+PyPDF2
+pdfkit
+colorama
+tabulate
+
+[:platform_system == "Windows"]
+comtypes
