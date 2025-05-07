@@ -1,6 +1,6 @@
-# PdfX - A Powerful PDF Converter Tool
+# PdfIt - A Powerful PDF Converter Tool
 
-PdfX is a versatile command-line tool that allows you to convert various file formats to PDF, merge PDFs, split PDFs into separate pages, and extract text from PDFs. With a user-friendly interface, PdfX makes working with PDF files easier than ever.
+PdfIt is a versatile command-line tool that allows you to convert various file formats to PDF, merge PDFs, split PDFs into separate pages, and extract text from PDFs. With a user-friendly interface, PdfIt makes working with PDF files easier than ever.
 
 ## Features
 
@@ -24,17 +24,17 @@ PdfX is a versatile command-line tool that allows you to convert various file fo
 
 ## Installation
 
-You can install PdfX using pip:
+You can install PdfIt using pip:
 
 ```bash
-pip install pdfx
+pip install pdfit
 ```
 
 This will automatically install all required Python dependencies.
 
 ### Dependencies
 
-PdfX automatically installs the following Python packages:
+PdfIt automatically installs the following Python packages:
 
 - fpdf>=1.7.2 (for text to PDF conversion)
 - Pillow>=10.0.0 (for image handling)
@@ -54,18 +54,21 @@ For optimal performance with certain features, you may need to install some exte
 #### For HTML to PDF conversion:
 
 Install wkhtmltopdf:
+
 - Windows: Download from [wkhtmltopdf website](https://wkhtmltopdf.org/downloads.html)
 - Linux: `sudo apt-get install wkhtmltopdf`
 - macOS: `brew install wkhtmltopdf`
 
 Or install the Python package with bundled binary:
+
 ```bash
-pip install "pdfx[html]"
+pip install "pdfit[html]"
 ```
 
 #### For PDF compression:
 
 Install Ghostscript:
+
 - Windows: Download from [Ghostscript website](https://ghostscript.com/releases/)
 - Linux: `sudo apt-get install ghostscript`
 - macOS: `brew install ghostscript`
@@ -80,10 +83,10 @@ For PDF compression, you'll need Ghostscript installed:
 
 ## Usage
 
-After installation, you can run PdfX from the command line:
+After installation, you can run PdfIt from the command line:
 
 ```bash
-pdfx
+pdfit
 ```
 
 This will launch the interactive menu where you can choose your desired operation.
@@ -92,14 +95,14 @@ This will launch the interactive menu where you can choose your desired operatio
 
 ### Converting a text file to PDF
 
-1. Run `pdfx`
+1. Run `pdfit`
 2. Choose option `1` (Convert TXT to PDF)
 3. Select your text file from the list or enter a custom path
 4. Choose the output path or use the default
 
 ### Merging multiple PDFs
 
-1. Run `pdfx`
+1. Run `pdfxtool`
 2. Choose option `6` (Merge PDFs)
 3. Select multiple PDF files by entering comma-separated numbers (e.g., `1,3,5`), or `all` for all PDFs
 4. Specify the output file or use the default `merged.pdf`

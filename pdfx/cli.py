@@ -441,5 +441,22 @@ def main():
         # Pause before showing the menu again
         input(f"\n{Fore.YELLOW}Press Enter to continue...{Style.RESET_ALL}")
 
+def run_pdfx():
+    """
+    Entry point function for the console script.
+    This function catches any errors that might occur during startup.
+    """
+    try:
+        main()
+    except Exception as e:
+        # Print error information to help diagnose issues
+        import traceback
+        print(f"\n{Fore.RED}Error starting PdfX: {str(e)}{Style.RESET_ALL}")
+        print(f"\n{Fore.YELLOW}Detailed error information:{Style.RESET_ALL}")
+        traceback.print_exc()
+        print(f"\n{Fore.YELLOW}If you continue to experience issues, please report this bug.{Style.RESET_ALL}")
+        return 1
+    return 0
+
 if __name__ == '__main__':
-    main()
+    sys.exit(run_pdfx())

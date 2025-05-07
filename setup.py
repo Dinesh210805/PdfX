@@ -1,5 +1,5 @@
 """
-Setup script for the PdfX package
+Setup script for the PdfIt package
 """
 from setuptools import setup, find_packages
 import os
@@ -9,15 +9,17 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md'), encoding='utf-8'
     long_description = f.read()
 
 setup(
-    name="pdfx",
-    version="0.1.0",    author="PdfX Team",
+    name="pdfit",
+    version="0.1.0",
+    author="PdfIt Team",
     author_email="dinesh@example.com", 
     description="A powerful PDF converter for multiple file types",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Dinesh210805/pdfx",
+    url="https://github.com/Dinesh210805/pdfit",
     packages=find_packages(),
-    include_package_data=True,    install_requires=[
+    include_package_data=True,
+    install_requires=[
         "fpdf>=1.7.2",
         "Pillow>=10.0.0",
         "python-docx>=0.8.11",
@@ -31,7 +33,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "pdfx=pdfx.cli:main",
+            "pdfit=pdfit.cli:run_pdfit",
         ],
     },
     classifiers=[

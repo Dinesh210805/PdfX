@@ -1,0 +1,3 @@
+[console_scripts]
+pdfit = pdfit.cli:run_pdfit
+
