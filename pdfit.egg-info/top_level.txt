@@ -1,2 +1,0 @@
-pdfit
-pdfx
